@@ -1,96 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>曹操</title>
+    <link th:href="@{/script/style.css}" rel="stylesheet" type="text/css"/>
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
 </head>
 
-<body onload="MM_preloadImages('8.公共素材/icon-2.png','8.公共素材/icon-4.png','8.公共素材/icon-6.png')">
+<body onload="MM_preloadImages('../static/img/icon-2.png','../static/img/icon-4.png','../static/img/icon-6.png')">
 <div id="container">
-  <div id="top"><img src="8.公共素材/logo.png" width="351" height="76" /></div>
-  <div id="menu"><ul>
-      <li><a href="index.html" class="dqy">首页</a></li>
-      <li><a href="shengping.html">人物生平</a></li>
-      <li><a href="jucuo.html">为政举措</a></li>
-      <li><a href="chengjiu.html">艺术成就</a></li>
-      <li><a href="qinshu.html">亲属成员</a></li>
-      <li><a href="pingjia.html">历史评价</a></li>
-      <li><a href="diangu.html">轶事典故</a></li>
-    </ul>
-  </div>
-    
+    <div id="top"><img src="../static/img/logo.png" width="351" height="76"/></div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html" class="dqy">首页</a></li>
+            <li><a href="shengping.html">人物生平</a></li>
+            <li><a href="jucuo.html">为政举措</a></li>
+            <li><a href="chengjiu.html">艺术成就</a></li>
+            <li><a href="qinshu.html">亲属成员</a></li>
+            <li><a href="pingjia.html">历史评价</a></li>
+            <li><a href="diangu.html">轶事典故</a></li>
+        </ul>
+    </div>
+
 </div>
 <div id="div2"></div>
-<div id="banner"><img src="1.首页/a-1.jpg" width="289" height="379"  class="img"/><img src="1.首页/a-2.jpg" width="289" height="379"  class="img"/><img src="1.首页/a-3.jpg" width="289" height="379"  class="img"/>
-  <a href="shengping.html" ><div id="lable1" >
-   
-    <h2>人物生平</h2>
-    <br />
-曹操的光辉的一生。</div></a>
-  <a href="shengping.html" ><div id="lable2">
-    <h2>艺术成就</h2>
-    <br />
-在诗歌及书法上的成就。</div></a>
-  <a href="pingjia.html" class="nr"><div id="lable3">
-    <h2>历史评价</h2>
-    <br />
-史书评论及古今评说。</div></a>
+<div id="banner"><img src="1.首页/a-1.jpg" width="289" height="379" class="img"/><img src="1.首页/a-2.jpg" width="289"
+                                                                                    height="379" class="img"/><img
+        src="1.首页/a-3.jpg" width="289" height="379" class="img"/>
+    <a href="shengping.html">
+        <div id="lable1">
+
+            <h2>人物生平</h2>
+            <br/>
+            曹操的光辉的一生。
+        </div>
+    </a>
+    <a href="shengping.html">
+        <div id="lable2">
+            <h2>艺术成就</h2>
+            <br/>
+            在诗歌及书法上的成就。
+        </div>
+    </a>
+    <a href="pingjia.html" class="nr">
+        <div id="lable3">
+            <h2>历史评价</h2>
+            <br/>
+            史书评论及古今评说。
+        </div>
+    </a>
 </div>
 <div id="contect">
-  <div id="section">
-  <p class="wz">政治家 军事家 文学家 书法家</p><br />
-<h1>曹操</h1>
-<p class="wz">曹操（155年－220年3月15日），字孟德，一名吉利，<br />
-小字阿瞒，沛国谯县（今安徽亳州）人，汉族。东汉末<br />
-年杰出的政治家、军事家、文学家、书法家。</p></div>
-  <div id="left">
-   <h3>人物生平</h3>
- <p class="yj">曹操（155年－220年3月15日），字孟德，一名吉利，小字阿瞒，沛国谯县（今安徽亳州）人，汉族。东汉末年杰出的政治家、军事家、文学家、书法家 。三国中曹魏政权的缔造者，以汉天子的名义征讨四方，对内消灭二袁、吕布、刘表、韩遂等割据势力，对外降服南匈奴、乌桓、鲜卑等，统一了中国北方，并实行一系列政策恢复经济生产和社会秩序，奠定了曹魏立国的基础。曹操在世时，担任东汉丞相，后为魏王，去世后谥号为武王。其子曹丕称帝后，追尊为武皇帝，庙号太祖。<br />
-   <P> 曹操精兵法，善诗歌，抒发自己的政治抱负，并反映汉末人民的苦难生活，气魄雄伟，慷慨悲凉；散文亦清峻整洁，开启并繁荣了建安文学，给后人留下了宝贵的精神财富，史称建安风骨，鲁迅评价其为“改造文章的祖师”。同时曹操也擅长书法，尤工章草，唐朝张怀瓘在《书断》中评其为“妙品”。
-  </div>
-  <div id="right">
-    <h3><a href="pingjia.html" class="hdb" >古今评说</a></h3>
-    <p class="yj">李瓒：“时将乱矣，天下英雄无过曹操。”<br /></p>
-    <p class="yj">赵俨：“曹镇东应期命世，必能匡济华夏，吾知归矣。”<br /></p>
-    <p class="yj">诸葛亮：“今曹操已拥百万之众，挟天子而令诸侯，此诚不可与争锋。<br /></p>
-    <p class="yj">刘渊：“大丈夫当为汉高、魏武，呼韩邪何足效哉！”<br /></p>
-    <p class="yj">裴松之：“魏太祖机变无方，略不世出。”<br /></p>
-    <p >李世民：“帝以雄武之姿，常艰难之运。栋梁之任，同乎曩时；匡正之功，异乎往代。”</p>
- 
-  </div>
+    <div id="section">
+        <p class="wz">政治家 军事家 文学家 书法家</p><br/>
+        <h1>曹操</h1>
+        <p class="wz">曹操（155年－220年3月15日），字孟德，一名吉利，<br/>
+            小字阿瞒，沛国谯县（今安徽亳州）人，汉族。东汉末<br/>
+            年杰出的政治家、军事家、文学家、书法家。</p></div>
+    <div id="left">
+        <h3>人物生平</h3>
+        <p class="yj">曹操（155年－220年3月15日），字孟德，一名吉利，小字阿瞒，沛国谯县（今安徽亳州）人，汉族。东汉末年杰出的政治家、军事家、文学家、书法家
+            。三国中曹魏政权的缔造者，以汉天子的名义征讨四方，对内消灭二袁、吕布、刘表、韩遂等割据势力，对外降服南匈奴、乌桓、鲜卑等，统一了中国北方，并实行一系列政策恢复经济生产和社会秩序，奠定了曹魏立国的基础。曹操在世时，担任东汉丞相，后为魏王，去世后谥号为武王。其子曹丕称帝后，追尊为武皇帝，庙号太祖。<br/>
+        <P>
+            曹操精兵法，善诗歌，抒发自己的政治抱负，并反映汉末人民的苦难生活，气魄雄伟，慷慨悲凉；散文亦清峻整洁，开启并繁荣了建安文学，给后人留下了宝贵的精神财富，史称建安风骨，鲁迅评价其为“改造文章的祖师”。同时曹操也擅长书法，尤工章草，唐朝张怀瓘在《书断》中评其为“妙品”。
+    </div>
+    <div id="right">
+        <h3><a href="pingjia.html" class="hdb">古今评说</a></h3>
+        <p class="yj">李瓒：“时将乱矣，天下英雄无过曹操。”<br/></p>
+        <p class="yj">赵俨：“曹镇东应期命世，必能匡济华夏，吾知归矣。”<br/></p>
+        <p class="yj">诸葛亮：“今曹操已拥百万之众，挟天子而令诸侯，此诚不可与争锋。<br/></p>
+        <p class="yj">刘渊：“大丈夫当为汉高、魏武，呼韩邪何足效哉！”<br/></p>
+        <p class="yj">裴松之：“魏太祖机变无方，略不世出。”<br/></p>
+        <p>李世民：“帝以雄武之姿，常艰难之运。栋梁之任，同乎曩时；匡正之功，异乎往代。”</p>
+
+    </div>
 </div>
-<div id="footer">
-  <div id="tb"><a href="index.html"><img src="icon-1.png" name="Image1" border="0"  class="xtb" id="Image1" onmouseover="MM_swapImage('Image1','','8.公共素材/icon-2.png',1)" onmouseout="MM_swapImgRestore()"/></a>
-    <a href="index.html"><img src="8.公共素材/icon-3.png" name="Image2" width="22" height="22" border="0"  class="xtb" id="Image2" onmouseover="MM_swapImage('Image2','','8.公共素材/icon-4.png',1)" onmouseout="MM_swapImgRestore()"/></a>
-    <a href="index.html"><img src="8.公共素材/icon-5.png" name="Image3" border="0"  class="xtb" id="Image3" onmouseover="MM_swapImage('Image3','','8.公共素材/icon-6.png',1)" onmouseout="MM_swapImgRestore()"/></a></div>
-  <div id="yw">Copyright&copy; NIT.All rights reserved  - Designed by NIT.</div>
+<div id="footer" th:include="common/footer :: footer">
+
 </div>
 </body>
 </html>
