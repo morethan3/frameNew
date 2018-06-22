@@ -1,137 +1,111 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-
-function MM_validateForm() { //v4.0
-  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
-    if (val) { nm=val.name; if ((val=val.value)!="") {
-      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
-      } else if (test!='R') { num = parseFloat(val);
-        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
-        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-          min=test.substring(8,p); max=test.substring(p+1);
-          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
-    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
-  } if (errors) alert('The following error(s) occurred:\n'+errors);
-  document.MM_returnValue = (errors == '');
-}
-//-->
-</script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{/script/footer.js}"></script>
 </head>
 
 <body onload="MM_preloadImages('8.公共素材/icon-2.png','8.公共素材/icon-4.png','8.公共素材/icon-6.png')">
 <div id="container">
-  <div id="top"><img src="8.公共素材/logo.png" width="351" height="76" /></div>
-  <div id="menu"><ul>
-      <li><a href="index.html" >&nbsp;首页</a></li>
-      <li><a href="shengping.html">人物生平</a></li>
-      <li><a href="jucuo.html" >为政举措</a></li>
-      <li><a href="chengjiu.html" >艺术成就</a></li>
-      <li><a href="qinshu.html">亲属成员</a></li>
-      <li><a href="pingjia.html" class="dqy">历史评价</a></li>
-      <li><a href="diangu.html">轶事典故</a></li>
-    </ul>
-  </div>
-    
+    <div id="top"><img src="8.公共素材/logo.png" width="351" height="76"/></div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">&nbsp;首页</a></li>
+            <li><a href="shengping.html">人物生平</a></li>
+            <li><a href="jucuo.html">为政举措</a></li>
+            <li><a href="chengjiu.html">艺术成就</a></li>
+            <li><a href="qinshu.html">亲属成员</a></li>
+            <li><a href="pingjia.html" class="dqy">历史评价</a></li>
+            <li><a href="diangu.html">轶事典故</a></li>
+        </ul>
+    </div>
+
 </div>
 <div id="div2"></div>
 <div id="contect">
-  <div id="big">
-    <h2>历史评价</h2><br />
-	<div id="pl"><h3>史书评论</h3>
-	陈寿《三国志》：“汉末，天下大乱，雄豪并起，而袁绍虎视四州，强盛莫敌。太祖运筹演谋，鞭挞宇内，揽申、商之法术，该韩、白之奇策，官方授材， 各因其器，矫情任算，不念旧恶，终能总御皇机，克成洪业者，惟其明略最优也。抑可谓非常之人，超世之杰矣。”
-王沈《魏书》：“太祖御军三十余年，手不舍书。书则讲武策，夜则思经传。登高必赋，及造新诗，被之管弦，皆成乐章。”
-<h3>古今评说</h3>
-<ul><li>李瓒：“时将乱矣，天下英雄无过曹操。</li>
-  <li>赵俨：“曹镇东应期命世，必能匡济华夏，吾知归矣。&quot;</li>
-  <li>沮授：“以曹兖州之明略，又挟天子以为资，我虽克伯珪，众实疲敝，而主骄将忲，军之破败，在此举矣。“</li>
-  <li>诸葛亮：“今曹操已拥百万之众，挟天子而令诸侯，此诚不可与争锋。“</li>
-  <li>孙权：“其惟杀伐小为过差，离间人骨肉以为酷耳，御将自古少有。”</li>
-  <li>孙楚：“太祖承运，神武应期，征讨暴乱，克宁区夏；协建灵符，天命既集，遂廓弘基，奄有魏域。”</li>
-  <li>陆机：“接皇汉之末绪，值王途之多违，伫重渊以育鳞，抚庆云而遐飞。运神道以载德，乘灵风而扇威。摧群雄而电击，举勍敌其如遗。指八极以远略，必翦焉而后绥。釐三才之缺典，启天地之禁闱。举修网之绝纪，纽大音之解徽。扫云物以贞观，要万途而来归。丕大德以宏覆，援日月而齐辉。济元功于九有，固举世之所推。”</li>
-  <li>潘安：“魏武赫以霆震，奉义辞以伐叛，彼虽众其焉用，故制胜于庙算。”</li>
-  <li>刘渊：“大丈夫当为汉高、魏武，呼韩邪何足效哉！</li>
-  <li>王导：“昔魏武，达政之主也；荀文若，功臣之最也。”</li>
-  <li>裴松之：“魏太祖机变无方，略不世出。”</li>
-  <li>垣荣祖：“昔曹操、曹丕上马横槊，下马谈论，此于天下可不负饮矣！”</li>
-  <li>钟嵘：“曹公古直，甚有悲凉之句。”</li>
-  <li>李世民：“帝以雄武之姿，常艰难之运。栋梁之任，同乎曩时；匡正之功，异乎往代。”</li>
-  <li>王勃：“魏武用兵，仿佛孙吴。临敌制奇，鲜有丧败，故能东禽狡布，北走强袁，破黄巾于寿张，斩眭固于射犬。援戈北指，蹋顿悬颅；拥旆南临，刘琮束手。振威烈而清中夏，挟天子以令诸侯，信超然之雄杰矣。”</li>
-  <li>鲁迅：“曹操是一个很有本事的人，至少是一个英雄。我虽不是曹操一党，但无论如何，总是非常佩服他。”</li>
-</ul>
-	</div>
-    <div id="pj"><form action="" method="get"><h3>在线评价</h3>
-	<p>你的姓名：      
-	  <label>
-	  <input name="name" type="text" id="name" size="15" maxlength="40" />
-	  </label>
-	</p>
-	  <p>你的性别：  
-	    <label>
-	    <input type="radio" name="sex" value="男" />
-	    </label>
-	    <label>男
-	    <input type="radio" name="sex" value="女" />
-	    女	    </label>
-	  </p>
-	  <p>邮箱地址：	    
-	    <label>
-	    <input name="address" type="text" id="address" size="15" maxlength="40" />
-	    </label>
-	  </p>
-	  <p onfocus="MM_validateForm('name','','R','address','','R','liuyan','','R');return document.MM_returnValue">评价内容：<br />
-	
-	    <label>
-	      <textarea name="liuyan" cols="30" rows="10" id="liuyan"></textarea>
-	      </label>
-	    </p>
-	  <p>
-	    <label>
-	    <input type="reset" name="Submit2" value="重置" />
-	    </label>
-	    <label>
-	    &nbsp;&nbsp;&nbsp;&nbsp;</label>
-	    <input name="Submit" type="submit" onclick="MM_validateForm('name','','R','address','','R','liuyan','','R');return document.MM_returnValue" value="提交" />
-	  </p>
-    </form>
+    <div id="big">
+        <h2>历史评价</h2><br/>
+        <div id="pl"><h3>史书评论</h3>
+            陈寿《三国志》：“汉末，天下大乱，雄豪并起，而袁绍虎视四州，强盛莫敌。太祖运筹演谋，鞭挞宇内，揽申、商之法术，该韩、白之奇策，官方授材，
+            各因其器，矫情任算，不念旧恶，终能总御皇机，克成洪业者，惟其明略最优也。抑可谓非常之人，超世之杰矣。”
+            王沈《魏书》：“太祖御军三十余年，手不舍书。书则讲武策，夜则思经传。登高必赋，及造新诗，被之管弦，皆成乐章。”
+            <h3>古今评说</h3>
+            <ul>
+                <li>李瓒：“时将乱矣，天下英雄无过曹操。</li>
+                <li>赵俨：“曹镇东应期命世，必能匡济华夏，吾知归矣。&quot;</li>
+                <li>沮授：“以曹兖州之明略，又挟天子以为资，我虽克伯珪，众实疲敝，而主骄将忲，军之破败，在此举矣。“</li>
+                <li>诸葛亮：“今曹操已拥百万之众，挟天子而令诸侯，此诚不可与争锋。“</li>
+                <li>孙权：“其惟杀伐小为过差，离间人骨肉以为酷耳，御将自古少有。”</li>
+                <li>孙楚：“太祖承运，神武应期，征讨暴乱，克宁区夏；协建灵符，天命既集，遂廓弘基，奄有魏域。”</li>
+                <li>
+                    陆机：“接皇汉之末绪，值王途之多违，伫重渊以育鳞，抚庆云而遐飞。运神道以载德，乘灵风而扇威。摧群雄而电击，举勍敌其如遗。指八极以远略，必翦焉而后绥。釐三才之缺典，启天地之禁闱。举修网之绝纪，纽大音之解徽。扫云物以贞观，要万途而来归。丕大德以宏覆，援日月而齐辉。济元功于九有，固举世之所推。”
+                </li>
+                <li>潘安：“魏武赫以霆震，奉义辞以伐叛，彼虽众其焉用，故制胜于庙算。”</li>
+                <li>刘渊：“大丈夫当为汉高、魏武，呼韩邪何足效哉！</li>
+                <li>王导：“昔魏武，达政之主也；荀文若，功臣之最也。”</li>
+                <li>裴松之：“魏太祖机变无方，略不世出。”</li>
+                <li>垣荣祖：“昔曹操、曹丕上马横槊，下马谈论，此于天下可不负饮矣！”</li>
+                <li>钟嵘：“曹公古直，甚有悲凉之句。”</li>
+                <li>李世民：“帝以雄武之姿，常艰难之运。栋梁之任，同乎曩时；匡正之功，异乎往代。”</li>
+                <li>王勃：“魏武用兵，仿佛孙吴。临敌制奇，鲜有丧败，故能东禽狡布，北走强袁，破黄巾于寿张，斩眭固于射犬。援戈北指，蹋顿悬颅；拥旆南临，刘琮束手。振威烈而清中夏，挟天子以令诸侯，信超然之雄杰矣。”</li>
+                <li>鲁迅：“曹操是一个很有本事的人，至少是一个英雄。我虽不是曹操一党，但无论如何，总是非常佩服他。”</li>
+            </ul>
+        </div>
+        <div id="pj">
+            <form action="" method="get"><h3>在线评价</h3>
+                <p>你的姓名：
+                    <label>
+                        <input name="name" type="text" id="name" size="15" maxlength="40"/>
+                    </label>
+                </p>
+                <p>你的性别：
+                    <label>
+                        <input type="radio" name="sex" value="男"/>
+                    </label>
+                    <label>男
+                        <input type="radio" name="sex" value="女"/>
+                        女 </label>
+                </p>
+                <p>邮箱地址：
+                    <label>
+                        <input name="address" type="text" id="address" size="15" maxlength="40"/>
+                    </label>
+                </p>
+                <p onfocus="MM_validateForm('name','','R','address','','R','liuyan','','R');return document.MM_returnValue">
+                    评价内容：<br/>
+
+                    <label>
+                        <textarea name="liuyan" cols="30" rows="10" id="liuyan"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="reset" name="Submit2" value="重置"/>
+                    </label>
+                    <label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input name="Submit" type="submit"
+                           onclick="MM_validateForm('name','','R','address','','R','liuyan','','R');return document.MM_returnValue"
+                           value="提交"/>
+                </p>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
 <div id="footer">
-  <div id="tb"><a href="index.html"><img src="8.公共素材/icon-1.png" name="Image1" border="0"  class="xtb" id="Image1" onmouseover="MM_swapImage('Image1','','8.公共素材/icon-2.png',1)" onmouseout="MM_swapImgRestore()"/></a>
-    <a href="index.html"><img src="8.公共素材/icon-3.png" name="Image2" width="22" height="22" border="0"  class="xtb" id="Image2" onmouseover="MM_swapImage('Image2','','8.公共素材/icon-4.png',1)" onmouseout="MM_swapImgRestore()"/></a>
-    <a href="index.html"><img src="8.公共素材/icon-5.png" name="Image3" border="0"  class="xtb" id="Image3" onmouseover="MM_swapImage('Image3','','8.公共素材/icon-6.png',1)" onmouseout="MM_swapImgRestore()"/></a></div>
-  <div id="yw">Copyright&copy; NIT.All rights reserved  - Designed by NIT.</div>
+    <div id="tb"><a href="index.html"><img src="8.公共素材/icon-1.png" name="Image1" border="0" class="xtb" id="Image1"
+                                           onmouseover="MM_swapImage('Image1','','8.公共素材/icon-2.png',1)"
+                                           onmouseout="MM_swapImgRestore()"/></a>
+        <a href="index.html"><img src="8.公共素材/icon-3.png" name="Image2" width="22" height="22" border="0" class="xtb"
+                                  id="Image2" onmouseover="MM_swapImage('Image2','','8.公共素材/icon-4.png',1)"
+                                  onmouseout="MM_swapImgRestore()"/></a>
+        <a href="index.html"><img src="8.公共素材/icon-5.png" name="Image3" border="0" class="xtb" id="Image3"
+                                  onmouseover="MM_swapImage('Image3','','8.公共素材/icon-6.png',1)"
+                                  onmouseout="MM_swapImgRestore()"/></a></div>
+    <div id="yw">Copyright&copy; NIT.All rights reserved - Designed by NIT.</div>
 </div>
 </body>
 </html>

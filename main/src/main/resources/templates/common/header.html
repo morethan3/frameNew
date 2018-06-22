@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body >
+<div  th:fragment="header" >
+    <div id="top"><img th:src="@{/img/logo.png}" width="351" height="76"/></div>
+    <div id="menu">
+        <ul id="">
+            <li><a th:href="@{/}" th:class="${currentPage=='index'}?'dqy':''">首页</a></li>
+            <li><a th:href="@{/lifetime}" th:class="${currentPage=='lifetime'}?'dqy':''">人物生平</a></li>
+            <li><a th:href="@{/measure}" th:class="${currentPage=='measure'}?'dqy':''">为政举措</a></li>
+            <li><a th:href="@{/achievement}" th:class="${currentPage=='achievement'}?'dqy':''">艺术成就</a></li>
+            <li><a th:href="@{/relative}" th:class="${currentPage=='relative'}?'dqy':''">亲属成员</a></li>
+            <li><a th:href="@{/evaluation}" th:class="${currentPage=='evaluation'}?'dqy':''">历史评价</a></li>
+            <li><a th:href="@{/allusion}" th:class="${currentPage=='allusion'}?'dqy':''">轶事典故</a></li>
+        </ul>
+    </div>
+</div>
+</body>

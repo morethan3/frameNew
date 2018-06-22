@@ -4,46 +4,33 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>曹操</title>
-    <link th:href="@{/script/style.css}" rel="stylesheet" type="text/css"/>
-
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{/script/footer.js}"></script>
 </head>
 
-<body onload="MM_preloadImages('../static/img/icon-2.png','../static/img/icon-4.png','../static/img/icon-6.png')">
-<div id="container">
-    <div id="top"><img src="../static/img/logo.png" width="351" height="76"/></div>
-    <div id="menu">
-        <ul>
-            <li><a href="index.html" class="dqy">首页</a></li>
-            <li><a href="shengping.html">人物生平</a></li>
-            <li><a href="jucuo.html">为政举措</a></li>
-            <li><a href="chengjiu.html">艺术成就</a></li>
-            <li><a href="qinshu.html">亲属成员</a></li>
-            <li><a href="pingjia.html">历史评价</a></li>
-            <li><a href="diangu.html">轶事典故</a></li>
-        </ul>
-    </div>
-
+<body onload="MM_preloadImages('/img/icon-2.png','/img/icon-4.png','/img/icon-6.png')">
+<div id="container" th:include="common/header :: header">
 </div>
 <div id="div2"></div>
-<div id="banner"><img src="1.首页/a-1.jpg" width="289" height="379" class="img"/><img src="1.首页/a-2.jpg" width="289"
-                                                                                    height="379" class="img"/><img
-        src="1.首页/a-3.jpg" width="289" height="379" class="img"/>
-    <a href="shengping.html">
+<div id="banner">
+    <img th:src="@{/img/index/a-1.jpg}" width="289" height="379" class="img"/>
+    <img th:src="@{/img/index/a-2.jpg}" width="289" height="379" class="img"/>
+    <img th:src="@{/img/index/a-3.jpg}" width="289" height="379" class="img"/>
+    <a th:href="@{/lifetime}">
         <div id="lable1">
-
             <h2>人物生平</h2>
             <br/>
             曹操的光辉的一生。
         </div>
     </a>
-    <a href="shengping.html">
+    <a th:href="@{/achievement}">
         <div id="lable2">
             <h2>艺术成就</h2>
             <br/>
             在诗歌及书法上的成就。
         </div>
     </a>
-    <a href="pingjia.html" class="nr">
+    <a th:href="@{/evaluation}" class="nr">
         <div id="lable3">
             <h2>历史评价</h2>
             <br/>
@@ -51,6 +38,7 @@
         </div>
     </a>
 </div>
+
 <div id="contect">
     <div id="section">
         <p class="wz">政治家 军事家 文学家 书法家</p><br/>
@@ -66,7 +54,7 @@
             曹操精兵法，善诗歌，抒发自己的政治抱负，并反映汉末人民的苦难生活，气魄雄伟，慷慨悲凉；散文亦清峻整洁，开启并繁荣了建安文学，给后人留下了宝贵的精神财富，史称建安风骨，鲁迅评价其为“改造文章的祖师”。同时曹操也擅长书法，尤工章草，唐朝张怀瓘在《书断》中评其为“妙品”。
     </div>
     <div id="right">
-        <h3><a href="pingjia.html" class="hdb">古今评说</a></h3>
+        <h3><a th:href="@{/evaluation}" class="hdb">古今评说</a></h3>
         <p class="yj">李瓒：“时将乱矣，天下英雄无过曹操。”<br/></p>
         <p class="yj">赵俨：“曹镇东应期命世，必能匡济华夏，吾知归矣。”<br/></p>
         <p class="yj">诸葛亮：“今曹操已拥百万之众，挟天子而令诸侯，此诚不可与争锋。<br/></p>
@@ -77,7 +65,6 @@
     </div>
 </div>
 <div id="footer" th:include="common/footer :: footer">
-
 </div>
 </body>
 </html>
